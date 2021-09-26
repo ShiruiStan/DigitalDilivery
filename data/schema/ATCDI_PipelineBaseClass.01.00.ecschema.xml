@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ECSchema schemaName="ATCDI_PipelineBaseClass" nameSpacePrefix="ATCDIPBC" version="1.0" description="管线工程" displayLabel="ATCDI_给排水工程属性库" xmlns="http://www.bentley.com/schemas/Bentley.ECXML.2.0">
+    <ECSchemaReference name="Bentley_Standard_CustomAttributes" version="01.02" prefix="bsca" />
+    <ECSchemaReference name="EditorCustomAttributes" version="01.00" prefix="beca" />
+    <ECSchemaReference name="Unit_Attributes" version="01.00" prefix="units_attribs" />
+    <ECCustomAttributes>
+        <SchemaChangeTrackingState xmlns="Bentley_Standard_CustomAttributes.01.02">
+            <FinalizationHistory />
+            <TrackingEnabled>True</TrackingEnabled>
+            <SchemaFullNameAtEditingStart>ATCDI_PipelineBaseClass.01.00</SchemaFullNameAtEditingStart>
+        </SchemaChangeTrackingState>
+    </ECCustomAttributes>
+    <ECClass typeName="atcdi_materials" displayLabel="02_材料及零件属性" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_BridgeBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="atcdi_materials" typeName="string" displayLabel="材料属性" readOnly="True">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_BridgeBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue>""</FailureValue>
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="ATCDI_PipelineProperty" displayLabel="00_基本属性_管线工程" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="ATCDI_guid" typeName="string" displayLabel="guid" readOnly="True">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>100</Priority>
+                </PropertyPriority>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue>""</FailureValue>
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Typecode" typeName="string" displayLabel="构件分类码" readOnly="True">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>90</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="ATCDI_Num_Element" typeName="int" displayLabel="构件流水号" readOnly="True">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>-1</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9998</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_BridgeBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="description" typeName="string" displayLabel="描述">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9999</Priority>
+                </PropertyPriority>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression />
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="RainOutlet" displayLabel="01_雨水工程_出水口" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="type" typeName="string" displayLabel="类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Number" typeName="int" displayLabel="数量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Rainpipeline" displayLabel="01_雨水工程_管道" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="type" typeName="string" displayLabel="类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="length" typeName="double" displayLabel="长度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <DimensionName>L</DimensionName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Rainwell" description="含检查井、接收井等" displayLabel="01_雨水工程_工程井" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="type" typeName="string" displayLabel="类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>""</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <FailureValue />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Number" typeName="int" displayLabel="数量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Recycledpipeline" displayLabel="01_再生水工程_管道" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="length" typeName="double" displayLabel="长度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="type" typeName="string" displayLabel="类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="RecycledWell" displayLabel="01_再生水工程_工程井" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="type" typeName="string" displayLabel="类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Number" typeName="int" displayLabel="数量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_PipelineBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+</ECSchema>

@@ -1,0 +1,2889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ECSchema schemaName="ATCDI_AffiliatedBaseClass" nameSpacePrefix="ATCDI_ABC" version="1.0" displayLabel="ATCDI_道路附属属性库" xmlns="http://www.bentley.com/schemas/Bentley.ECXML.2.0">
+    <ECSchemaReference name="Bentley_Standard_CustomAttributes" version="01.02" prefix="bsca" />
+    <ECSchemaReference name="Unit_Attributes" version="01.00" prefix="units_attribs" />
+    <ECSchemaReference name="EditorCustomAttributes" version="01.00" prefix="beca" />
+    <ECCustomAttributes>
+        <SchemaChangeTrackingState xmlns="Bentley_Standard_CustomAttributes.01.02">
+            <FinalizationHistory />
+            <TrackingEnabled>True</TrackingEnabled>
+            <SchemaFullNameAtEditingStart>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameAtEditingStart>
+        </SchemaChangeTrackingState>
+    </ECCustomAttributes>
+    <ECClass typeName="Archedslope" displayLabel="01_附属构筑物_防护_拱形护坡" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="grass" typeName="double" displayLabel="植草">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-100</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="hight" typeName="double" displayLabel="路堤/路堑高度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>HEIGHT</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Number" typeName="int" displayLabel="拱形骨架排数">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C15concrete" typeName="double" displayLabel="C15现浇混凝土（护脚墙）">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-15</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C25PconcreteGJ" typeName="double" displayLabel="C25预制混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C25PconcreteLLK" typeName="double" displayLabel="C25预制混凝土（六棱块）">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C25concrete" typeName="double" displayLabel="C25现浇混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="M10" typeName="double" displayLabel="M10砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-80</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="ATCDI_BaseProperty" displayLabel="00_基本属性_道路工程附属构筑物" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="ATCDI_guid" typeName="string" displayLabel="guid" readOnly="True">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>100</Priority>
+                </PropertyPriority>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>""</ECExpression>
+                    <FailureValue>""</FailureValue>
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="ATCDI_RoadName" typeName="int" displayLabel="道路名称">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <StandardValues xmlns="EditorCustomAttributes.01.00">
+                    <MustBeFromList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ValueMap>
+                        <ValueMap>
+                            <DisplayString>G341(NK)</DisplayString>
+                            <Value>0</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <Value>1</Value>
+                            <DisplayString>经三十三路(MK)</DisplayString>
+                        </ValueMap>
+                        <ValueMap>
+                            <Value>2</Value>
+                            <DisplayString>A匝道</DisplayString>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>B匝道</DisplayString>
+                            <Value>3</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>C匝道</DisplayString>
+                            <Value>4</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>D匝道</DisplayString>
+                            <Value>5</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>E匝道</DisplayString>
+                            <Value>6</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>F匝道</DisplayString>
+                            <Value>7</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>G匝道</DisplayString>
+                            <Value>8</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>H匝道</DisplayString>
+                            <Value>9</Value>
+                        </ValueMap>
+                    </ValueMap>
+                </StandardValues>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Typecode" typeName="string" displayLabel="构件分类码" readOnly="True">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>90</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="ATCDI_Num_Element" typeName="int" displayLabel="构件流水号" readOnly="True">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9998</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_BridgeBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="description" typeName="string" displayLabel="描述">
+            <ECCustomAttributes>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9999</Priority>
+                </PropertyPriority>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression />
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ACTDI_Bridge.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="startStatiomn" typeName="double" displayLabel="起点桩号">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <DimensionName>L</DimensionName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="endStatiomn" typeName="double" displayLabel="终点桩号">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="LeftOrRight" typeName="int" displayLabel="左右幅">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue>1</FailureValue>
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <StandardValues xmlns="EditorCustomAttributes.01.00">
+                    <MustBeFromList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ValueMap>
+                        <ValueMap>
+                            <DisplayString>整体式</DisplayString>
+                            <Value>0</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>左幅</DisplayString>
+                            <Value>1</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>右幅</DisplayString>
+                            <Value>2</Value>
+                        </ValueMap>
+                    </ValueMap>
+                </StandardValues>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_BridgeBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Bridgeslope" displayLabel="01_附属构筑物_防护_桥头护坡" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C25PconcreteGJ" typeName="double" displayLabel="C25预制混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="hight" typeName="double" displayLabel="路堤/路堑高度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>HEIGHT</KindOfQuantityName>
+                    <DimensionName>L</DimensionName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="CentralDivider" description="C25预制混凝土不计算路缘石量" displayLabel="01_附属构筑物_中央分隔带" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="width" typeName="double" displayLabel="中分带宽度">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C25concrete" typeName="double" displayLabel="C25预制混凝土">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>0</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <DimensionName>L3</DimensionName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="CementMortar" typeName="double" displayLabel="M10水泥砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="TuGongMo" typeName="double" displayLabel="复合土工膜">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>0</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <DimensionName>L2</DimensionName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="gravelfill" typeName="double" displayLabel="砂砾回填土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Curbs" displayLabel="01_附属构筑物_路缘石" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C25concrete" typeName="double" displayLabel="C25预制混凝土">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="CementMortar" typeName="double" displayLabel="M10水泥砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="EmbankmentGutter" displayLabel="01_附属构筑物_排水_路堤排水沟" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C25concrete" typeName="double" displayLabel="C25预制块总体积">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="CementMortar" typeName="double" displayLabel="水泥砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="gravelCushion" typeName="double" displayLabel="砂砾垫层">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="huitufill" typeName="double" displayLabel="灰土回填">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="size" typeName="string" displayLabel="排水沟尺寸">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>"0.6x0.6"</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="CommonSoil" typeName="double" displayLabel="开挖普通土量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-7</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="LooseSoil" typeName="double" displayLabel="开挖松土量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="HardSoil" typeName="double" displayLabel="开挖硬土量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Filter" displayLabel="01_附属构筑物_挡土墙_滤层" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="gravel" typeName="double" displayLabel="砂砾垫层">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Mud" typeName="double" displayLabel="胶泥">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-80</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="Grass" displayLabel="01_附属构筑物_防护_草灌混植" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="hight" typeName="double" displayLabel="路堤/路堑高度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>0</Priority>
+                </PropertyPriority>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>HEIGHT</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="grass" typeName="double" displayLabel="草灌混植(1000m2)">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-100</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="grass3d" typeName="double" displayLabel="三维网(1000m2)">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-150</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="rebar" typeName="double" displayLabel="Φ8固定钉">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>M</DimensionName>
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-200</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="HangingDitch" displayLabel="01_附属构筑物_排水_吊沟" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="platform" typeName="int" displayLabel="平台道数">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="LQMX" typeName="double" displayLabel="沥青麻絮伸缩缝">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-25</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C20concrete" typeName="double" displayLabel="C20现浇混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="InterceptingDitch" displayLabel="01_附属构筑物_排水_截水沟" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="size" typeName="string" displayLabel="截水沟尺寸">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>"0.4x0.4"</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="CementMortar" typeName="double" displayLabel="M10水泥砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C20concrete" typeName="double" displayLabel="C20现浇混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Fill" typeName="double" displayLabel="填方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-7</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="TuGongMo" typeName="double" displayLabel="复合土工膜">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Cushion" typeName="double" displayLabel="二八灰土垫层">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="PlatformDitch" displayLabel="01_附属构筑物_排水_平台排水沟" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C20concrete" typeName="double" displayLabel="C20现浇混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Slope" typeName="int" displayLabel="边坡级数">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="M10" typeName="double" displayLabel="M10水泥砂浆">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="FHTGM" typeName="double" displayLabel="复合土工膜">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="LimeSoil" typeName="double" displayLabel="二八灰土垫层">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="protection" displayLabel="01_附属构筑物_防护_宽平台护脚" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C15concrete" typeName="double" displayLabel="C15现浇混凝土（护脚墙）">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="rail" description="仅A=0护脚矮墙有材料" displayLabel="01_附属构筑物_挡土墙_护栏底挡块" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C25" typeName="double" displayLabel="C25混凝土挡块">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Stoneconcrete" typeName="double" displayLabel="小石子混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Sleeve" typeName="double" displayLabel="Φ273x7x734套筒">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>M</DimensionName>
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-80</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="steel" typeName="double" displayLabel="300x300x6钢板">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>M</DimensionName>
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-100</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="rebar" typeName="double" displayLabel="Φ32普通钢筋">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>M</DimensionName>
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-150</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="RollerDitch" displayLabel="01_附属构筑物_排水_路堑边沟" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="C20concrete" typeName="double" displayLabel="C20现浇混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="size" typeName="string" displayLabel="边沟尺寸">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>"0.6x0.6"</ECExpression>
+                    <FailureValue />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-5</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C30concrete" typeName="double" displayLabel="C30预制混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-9</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C15concrete" typeName="double" displayLabel="C15混凝土基础">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-12</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Rebar8" typeName="double" displayLabel="Φ8普通钢筋">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>0</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <DimensionName>M</DimensionName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Rebar12" typeName="double" displayLabel="Φ12普通钢筋">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>M</DimensionName>
+                    <KindOfQuantityName>MASS</KindOfQuantityName>
+                    <UnitName>KILOGRAM</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-25</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="FLTGB" typeName="double" displayLabel="反滤土工布">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="GSTGB" typeName="double" displayLabel="隔渗土工布">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-45</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="gravel" typeName="double" displayLabel="1-5cm碎石">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="PVC" typeName="double" displayLabel="Φ20带孔uPVC泄水孔">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L</DimensionName>
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="slope" displayLabel="01_附属构筑物_挡土墙_锥形护坡" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="fill" typeName="double" displayLabel="填土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-80</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="M10" typeName="double" displayLabel="M10浆砌片石">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="grass" typeName="double" displayLabel="植草">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-100</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="step" displayLabel="01_附属构筑物_防护_检查梯" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="Number" typeName="int" displayLabel="总段数">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>1</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-15</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C20concrete" typeName="double" displayLabel="C20混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+    <ECClass typeName="wall" displayLabel="01_附属构筑物_挡土墙_墙身" isDomainClass="True">
+        <ECCustomAttributes>
+            <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                <PreviousNames>
+                    <PreviousName>
+                        <OldName />
+                        <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                        <IsNewInThisVersion>True</IsNewInThisVersion>
+                    </PreviousName>
+                </PreviousNames>
+                <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+            </PreviousNameArray>
+        </ECCustomAttributes>
+        <ECProperty propertyName="style" typeName="int" displayLabel="挡土墙类型">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>0</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+                <StandardValues xmlns="EditorCustomAttributes.01.00">
+                    <ValueMap>
+                        <ValueMap>
+                            <DisplayString>仰斜式挡土墙</DisplayString>
+                            <Value>0</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>俯斜式挡土墙</DisplayString>
+                            <Value>1</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>护脚矮墙</DisplayString>
+                            <Value>2</Value>
+                        </ValueMap>
+                    </ValueMap>
+                </StandardValues>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-10</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="hight" typeName="int" displayLabel="挡土墙墙顶填土高度">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <StandardValues xmlns="EditorCustomAttributes.01.00">
+                    <MustBeFromList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ValueMap>
+                        <ValueMap>
+                            <DisplayString>A=0</DisplayString>
+                            <Value>0</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>A=3</DisplayString>
+                            <Value>1</Value>
+                        </ValueMap>
+                        <ValueMap>
+                            <DisplayString>A=8</DisplayString>
+                            <Value>2</Value>
+                        </ValueMap>
+                    </ValueMap>
+                </StandardValues>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-20</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="C20" typeName="double" displayLabel="C20混凝土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-30</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="LQMX" typeName="double" displayLabel="沥青麻絮伸缩缝">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L2</DimensionName>
+                    <KindOfQuantityName>AREA</KindOfQuantityName>
+                    <UnitName>METRE_SQUARED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-40</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="Excavation" typeName="double" displayLabel="挖方量">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-25</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="PVC" typeName="double" description="仅护脚矮墙有数量？？" displayLabel="Φ100PVC排水管">
+            <ECCustomAttributes>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_AffiliatedBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <RequiredSymbolSets />
+                    <ECExpression>0</ECExpression>
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <KindOfQuantityName>LENGTH</KindOfQuantityName>
+                    <DimensionName>L</DimensionName>
+                    <UnitName>METRE</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-50</Priority>
+                </PropertyPriority>
+            </ECCustomAttributes>
+        </ECProperty>
+        <ECProperty propertyName="fill" typeName="double" displayLabel="回填土">
+            <ECCustomAttributes>
+                <CalculatedECPropertySpecification xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <ECExpression>0</ECExpression>
+                    <FailureValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <ParserRegularExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <IsDefaultValueOnly>True</IsDefaultValueOnly>
+                    <UseLastValidValueOnFailure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                    <RequiredSymbolSets />
+                </CalculatedECPropertySpecification>
+                <UnitSpecification xmlns="Unit_Attributes.01.00">
+                    <DimensionName>L3</DimensionName>
+                    <KindOfQuantityName>VOLUME</KindOfQuantityName>
+                    <UnitName>METRE_CUBED</UnitName>
+                    <AllowableUnits />
+                </UnitSpecification>
+                <PropertyPriority xmlns="EditorCustomAttributes.01.00">
+                    <Priority>-80</Priority>
+                </PropertyPriority>
+                <PreviousNameArray xmlns="Bentley_Standard_CustomAttributes.01.02">
+                    <PreviousNames>
+                        <PreviousName>
+                            <OldName />
+                            <SchemaFullNameKey>ATCDI_RoadBaseClass.01.00</SchemaFullNameKey>
+                            <IsNewInThisVersion>True</IsNewInThisVersion>
+                        </PreviousName>
+                    </PreviousNames>
+                    <PreviousNameAlreadySaved>True</PreviousNameAlreadySaved>
+                </PreviousNameArray>
+            </ECCustomAttributes>
+        </ECProperty>
+    </ECClass>
+</ECSchema>

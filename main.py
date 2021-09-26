@@ -7,6 +7,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 import os
 from scanner import Scanner
+import traceback
 
 
 class MainBox:
@@ -28,10 +29,8 @@ class MainBox:
         self.db_entry = tk.Entry(self.window, width='30')
         self.db_entry.pack()
         tk.Button(self.window, text="选取sqlite文件", command=self.select_sqlite_file).pack()
-
         tk.Label(self.window).pack()
         tk.Button(self.window, text="导出", command=self.export).pack()
-
         self.window.mainloop()
 
     def select_sqlite_file(self):
@@ -53,8 +52,15 @@ class MainBox:
         schema_path = self.schema_entry.get()
         db_path = self.db_entry.get()
         code_path = self.code_entry.get()
+        schema_path = './data/schema'
+        code_path = './data/ATCDI_tp_20190101.db'
+        db_path = './data/00-00-all.db'
         if os.path.isdir(schema_path) and os.path.isfile(db_path) and os.path.isfile(code_path):
-            Scanner(db_path, schema_path, code_path).start()
+            try:
+                Scanner(db_path, schema_path, code_path).start()
+            except Exception:
+                messagebox.showerror('错误', traceback.format_exc())
+
         else:
             messagebox.showerror("错误", '请检查文件路径输入是否正确')
 
