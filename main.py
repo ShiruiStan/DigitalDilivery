@@ -52,9 +52,6 @@ class MainBox:
         schema_path = self.schema_entry.get()
         db_path = self.db_entry.get()
         code_path = self.code_entry.get()
-        schema_path = './data/schema'
-        code_path = './data/ATCDI_tp_20190101.db'
-        db_path = './data/00-00-all.db'
         if os.path.isdir(schema_path) and os.path.isfile(db_path) and os.path.isfile(code_path):
             try:
                 Scanner(db_path, schema_path, code_path).start()
